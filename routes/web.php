@@ -19,4 +19,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', 'App\Http\Controllers\PagesController@getHome');
+Route::get('/home', 'App\Http\Controllers\CommentsController@getHome');
