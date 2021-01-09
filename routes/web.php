@@ -2,6 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\PostController;
+
+use App\Models\Post;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +18,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
+
+Route::get('/', "App\Http\Controllers\PostController@index");
+Route::Post("/",  "App\Http\Controllers\PostController@addPost");
