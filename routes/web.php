@@ -2,7 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\PagesController;
+use App\Http\Controllers\PostController;
+
+use App\Models\Post;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -15,8 +18,9 @@ use App\Http\Controllers\PagesController;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
-Route::get('/home', 'App\Http\Controllers\CommentsController@getHome');
+Route::get('/', "App\Http\Controllers\PostController@index");
+Route::Post("/",  "App\Http\Controllers\PostController@addPost");
