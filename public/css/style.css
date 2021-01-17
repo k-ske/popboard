@@ -6,7 +6,7 @@
 }
 
 .image-field{
-  width: 60%;
+  width: 80%;
 }
 
 .comment-field{
@@ -36,4 +36,80 @@
   width: 100%;
   height: 800px;
   border-radius: 20px;
+}
+
+.comment-field{
+  width: 20%;
+
+}
+
+.comment-label{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+ .comment-submit{
+    width: 200px;
+    height: 100px;
+    word-wrap: break-word;
+  }
+
+
+@media (max-width: 1024px){
+  .field{
+    display: block;
+  }
+
+  .image-field{
+    width: auto;
+  }
+
+  .nickname{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  .nickname-label{
+    
+  }
+  
+  .comment{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+  
+  }
+
+ 
+  
+  
+}
+
+@media (max-width: 599px){
+  .field{
+    display: block;
+  }
+
+  .image-field{
+    width: auto;
+  }
+
+  .nickname{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  .nickname-label{
+    
+  }
+  
+  .comment{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  
 }

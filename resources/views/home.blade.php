@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-    <b>ろうけつ染め展（2020.12/11~14)</b>
+    <b>ろうけつ染め展（2020.12)</b>
     <div class="field">
       <div class="image-field">
         <div class="image">
@@ -19,16 +19,24 @@
       <div class="comment-field">
         <form method="POST">
           @csrf
-          <label class='name'>NickName</label>
-          <input type="text" name="nickname"/>
-          <label>Comment</label>
-          <input type="text" name="comment"/>
+          <div class="nickname">
+            <label class='nickname-label'>NickName</label>
+            <input type="text" name="nickname"/>
+          </div>
+          <br>
+          <div class="comment">
+            <label class="comment-label">Comment</label>
+            <textarea name="comment"></textarea>
+          </div>
+          <br>
           <input type="submit" value="OK"/>
           
           <hr>
-          @foreach ($posts as $post)
-            <p><b>{{$post["nickname"]}} </b>{{$post["comment"]}}</P>
-          @endforeach
+          <div class="comment-submit"
+            @foreach ($posts as $post)
+              <p><b>{{$post["nickname"]}} </b>{{$post["comment"]}}</P>
+            @endforeach
+          </div>
         </form>
       </div>
     </div>
