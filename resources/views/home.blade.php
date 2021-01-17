@@ -4,7 +4,7 @@
   <div class="field">
     <div class="image-field">
       <div class="image">
-        <img src="image/image2.jpg" alt="作品" class="work1">
+        <img src="https://k20k20sk.s3-ap-northeast-1.amazonaws.com/works_image/image2.PNG" class="work">
         <p>T-shirt Collection</p>
       </div>
     </div>
