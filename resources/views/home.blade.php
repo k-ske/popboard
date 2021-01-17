@@ -31,7 +31,7 @@
           <br>
           <input type="submit" value="OK"/>
           
-          <hr>
+          <hr class="line">
           <div class="comment-submit"
             @foreach ($posts as $post)
               <p><b>{{$post["nickname"]}} </b>{{$post["comment"]}}</P>

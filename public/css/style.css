@@ -64,24 +64,27 @@
     width: auto;
   }
 
-  .nickname{
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
-  
+  .comment-field{
+    width: 90%;
   }
-  .nickname-label{
-    
-  }
-  
+ 
   .comment{
-    width: 40%;
     display: flex;
-    justify-content: space-between;
-  
   }
 
- 
+  .comment-label{
+    padding-right: 10px;
+  }
+  
+  .comment-submit{
+    width: 80%;
+    word-wrap: break-word;
+  }
+  
+  .line{
+    margin-right: 10px;
+  }
+  
   
   
 }
