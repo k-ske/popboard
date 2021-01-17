@@ -2,7 +2,6 @@
 
 .field{
   display: flex;
-
 }
 
 .image-field{
@@ -11,11 +10,7 @@
 
 .comment-field{
   margin-left: 100px;
-}
-
-
-.name{
-  color: red;
+  width: 20%;
 }
 
 .image{
@@ -38,21 +33,16 @@
   border-radius: 20px;
 }
 
-.comment-field{
-  width: 20%;
-
-}
-
 .comment-label{
   display: table-cell;
   vertical-align: middle;
 }
 
- .comment-submit{
-    width: 200px;
-    height: 100px;
-    word-wrap: break-word;
-  }
+.comment-submit{
+  width: 200px;
+  height: 100px;
+  word-wrap: break-word;
+}
 
 
 @media (max-width: 1024px){
@@ -65,7 +55,9 @@
   }
 
   .comment-field{
-    width: 90%;
+    width: auto;
+    margin-left: 0;
+    padding: 30px;
   }
  
   .comment{
@@ -77,42 +69,10 @@
   }
   
   .comment-submit{
-    width: 80%;
+    width: auto;
     word-wrap: break-word;
   }
-  
-  .line{
-    margin-right: 10px;
-  }
-  
-  
-  
 }
 
-@media (max-width: 599px){
-  .field{
-    display: block;
-  }
 
-  .image-field{
-    width: auto;
-  }
-
-  .nickname{
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
-  
-  }
-  .nickname-label{
-    
-  }
-  
-  .comment{
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
-  
-  }
-  
 }

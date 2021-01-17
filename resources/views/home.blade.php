@@ -32,7 +32,7 @@
           <input type="submit" value="OK"/>
           
           <hr class="line">
-          <div class="comment-submit"
+          <div class="comment-submit">
             @foreach ($posts as $post)
               <p><b>{{$post["nickname"]}} </b>{{$post["comment"]}}</P>
             @endforeach
