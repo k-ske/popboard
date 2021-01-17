@@ -1,5 +1,39 @@
 @charset "utf-8";
 
+.field{
+  display: flex;
+
+}
+
+.image-field{
+  width: 60%;
+}
+
+.comment-field{
+  margin-left: 100px;
+}
+
+
 .name{
   color: red;
+}
+
+.image{
+  position: relative;
+}
+
+.image p{
+  position: absolute;
+  color: white;
+  top: 0;
+  left: 0;
+  font-weight: bold;
+  font-size: 2em;
+  margin-left: 10px;
+}
+
+.work1{
+  width: 100%;
+  height: 800px;
+  border-radius: 20px;
 }
