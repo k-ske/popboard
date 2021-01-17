@@ -1,5 +1,28 @@
 @charset "utf-8";
 
+.top-bar-contents{
+  display: flex;
+  height: 8vh;
+}
+
+.site-name{
+  height: auto;
+  font-weight: bold;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  padding-left: 5vw;
+}
+
+.top-bar-picture{
+  height: 100%;
+  margin-left: 50px;
+  border-radius: 20px;
+}
+
+.title{
+  font-size: 1.5em;
+}
 .field{
   display: flex;
 }
@@ -7,6 +30,7 @@
 .image-field{
   width: 80%;
 }
+
 
 .comment-field{
   margin-left: 100px;
@@ -33,9 +57,15 @@
   border-radius: 20px;
 }
 
+.comment{
+  display: flex;
+}
+
 .comment-label{
-  display: table-cell;
-  vertical-align: middle;
+  display: flex;
+  height: auto;
+  padding-right: 10px;
+
 }
 
 .comment-submit{

@@ -1,10 +1,10 @@
 @extends('layouts.common')
 @section('content')
-  <b>ろうけつ染め展（2020.12)</b>
+  <b class="title">ろうけつ染め展（2020.12)</b>
   <div class="field">
     <div class="image-field">
       <div class="image">
-        <img src="image/image3.jpg" alt="作品" class="work1">
+        <img src="image/image2.jpg" alt="作品" class="work1">
         <p>T-shirt Collection</p>
       </div>
     </div>
@@ -12,12 +12,12 @@
       <form method="POST">
         @csrf
         <div class="nickname">
-          <label class='nickname-label'>NickName</label>
+          <b><label class='nickname-label'>ニックネーム</label></b>
           <input type="text" name="nickname"/>
         </div>
         <br>
         <div class="comment">
-          <label class="comment-label">Comment</label>
+          <b><label class="comment-label">コメント</label></b>
           <textarea name="comment"></textarea>
         </div>
         
