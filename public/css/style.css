@@ -39,8 +39,9 @@
 }
 
 .comment-submit{
+  background-color: white;
   width: 200px;
-  height: 100px;
+  height: auto;
   word-wrap: break-word;
 }
 
